@@ -30,12 +30,12 @@ public class ArrayManipulation {
 	public void testSortARandomArray() throws Exception {
 
 		String[] testArray = new String[100];
-		for (int i = 0; i < 100; ++ i) {
+		for (int i = 0; i < 100; ++i) {
 			testArray[i] = Long.toString(rng.nextLong());
 		}
 		
 		Sorting.sort(testArray);
-		for (int i = 0; i < 99; ++ i) {
+		for (int i = 0; i < 99; ++i) {
 			assertTrue(testArray[i].compareTo(testArray[i+1]) <= 0);
 		}
 	}

@@ -88,7 +88,7 @@ public class CustomArrayListTest {
 	
 	@Test
 	public void testContains() {
-		ArrayList<String> list = new ArrayList<String>();
+		ArrayList<String> list = new ArrayList<String>("");
 		list.add("This");
 		list.add("is");
 		list.add("only");

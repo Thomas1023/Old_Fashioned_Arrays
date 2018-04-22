@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class CustomArrayListTest {
-
+	
 	@Test
 	public void testAddAndGet() {
 		ArrayList<Integer> list = new ArrayList<Integer>();
@@ -88,7 +88,7 @@ public class CustomArrayListTest {
 	
 	@Test
 	public void testContains() {
-		ArrayList<String> list = new ArrayList<String>("");
+		ArrayList<String> list = new ArrayList<String>();
 		list.add("This");
 		list.add("is");
 		list.add("only");

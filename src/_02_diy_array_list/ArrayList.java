@@ -18,7 +18,7 @@ public class ArrayList<T> {
 	public void remove(int i) {
 		int temp = 0;
 		T[] tss = (T[]) new Object[Ts.length - 1];
-		for (int j = 0; j < tss.length; j++) {
+		for (int j = 0; j < Ts.length; j++) {
 			if (i != j) {
 				tss[temp] = Ts[j];
 				System.out.println(tss[temp]);
@@ -37,13 +37,14 @@ public class ArrayList<T> {
 		for (int j = 0; j < Ts.length; j++) {
 			temp[j] = Ts[j];
 		}
-
-		Ts = (T[]) new Object[Ts.length + 1];
-
-		for (int j = 0; j < temp.length; j++) {
-			Ts[j] = temp[j];
-		}
-		Ts[Ts.length - 1] = (T) i; // reshape
+		temp[temp.length - 1] = i;
+		Ts = temp;
+//		Ts = (T[]) new Object[Ts.length + 1];
+//
+//		for (int j = 0; j < temp.length; j++) {
+//			Ts[j] = temp[j];
+//		}
+//		Ts[Ts.length - 1] = (T) i; // reshape
 	}
 
 	public ArrayList() {
@@ -52,7 +53,7 @@ public class ArrayList<T> {
 
 	public T get(int i) {
 
-		return (T) Ts[i];
+		return Ts[i];
 	}
 
 	public void addAt(int i, T c) {

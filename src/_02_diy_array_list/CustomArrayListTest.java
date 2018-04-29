@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class CustomArrayListTest {
-	
+
 	@Test
 	public void testAddAndGet() {
 		ArrayList<Integer> list = new ArrayList<Integer>();
